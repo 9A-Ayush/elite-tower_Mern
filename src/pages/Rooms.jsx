@@ -7,7 +7,7 @@ const rooms = [
     id: 1,
     name: 'Deluxe Room',
     description: 'Spacious room with city view',
-    price: 199,
+    price: 4999,
     image: '/images/room-1.jpg',
     amenities: ['King Size Bed', 'Free WiFi', 'Parking', 'Coffee Maker']
   },
@@ -15,7 +15,7 @@ const rooms = [
     id: 2,
     name: 'Executive Suite',
     description: 'Luxury suite with separate living area',
-    price: 299,
+    price: 9999,
     image: '/images/room-2.jpg',
     amenities: ['King Size Bed', 'Free WiFi', 'Parking', 'Coffee Maker']
   },
@@ -23,7 +23,7 @@ const rooms = [
     id: 3,
     name: 'Executive Suite',
     description: 'Luxury suite with separate living area',
-    price: 299,
+    price: 19999,
     image: '/images/room-3.jpg',
     amenities: ['King Size Bed', 'Free WiFi', 'Parking', 'Coffee Maker']
   },
