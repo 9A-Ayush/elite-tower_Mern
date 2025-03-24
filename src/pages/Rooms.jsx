@@ -53,7 +53,7 @@ function Rooms() {
                 <Heading size="md" mb={2}>{room.name}</Heading>
                 <Text color="gray.600" mb={4}>{room.description}</Text>
                 <Text fontWeight="bold" fontSize="xl" mb={4}>
-                  ${room.price}<Text as="span" fontSize="sm">/night</Text>
+                  ₹{room.price}<Text as="span" fontSize="sm">/night</Text>
                 </Text>
                 <HStack spacing={4} mb={4}>
                   {room.amenities.map((amenity, index) => (
