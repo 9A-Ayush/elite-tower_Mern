@@ -246,15 +246,9 @@ function Footer() {
               _hover={{ color: 'brand.500' }}
               transition="all 0.3s"
             >
-              Privacy Policy
+              Dev.Ayush
             </Link>
-            <Link 
-              href="#" 
-              _hover={{ color: 'brand.500' }}
-              transition="all 0.3s"
-            >
-              Terms of Service
-            </Link>
+        
           </Stack>
         </Stack>
       </Container>
