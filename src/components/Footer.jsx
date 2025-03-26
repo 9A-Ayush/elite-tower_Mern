@@ -43,7 +43,7 @@ function Footer() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
-    })
+    })                          
   }
 
   const handleSubscribe = (e) => {
@@ -54,7 +54,7 @@ function Footer() {
       status: "success",
       duration: 3000,
       isClosable: true,
-    })
+    })            
   }
 
   return (
@@ -63,13 +63,13 @@ function Footer() {
       <IconButton
         aria-label="Scroll to top"
         icon={<FaArrowUp />}
-        size="lg"
-        colorScheme="brand"
+        size="lg"    
+        colorScheme="brand"    
         position="fixed"
         bottom="4"
         right="4"
-        zIndex="999"
-        rounded="full"
+        zIndex="999"        
+        rounded="full"        
         onClick={scrollToTop}
         opacity={showScrollTop ? 1 : 0}
         visibility={showScrollTop ? 'visible' : 'hidden'}
@@ -78,14 +78,14 @@ function Footer() {
         _hover={{
           transform: 'translateY(-4px)',
           boxShadow: 'lg'
-        }}
+        }}                        
       />
 
       {/* Gradient Overlay */}
-      <Box
+      <Box                        
         position="absolute"
-        top="0"
-        left="0"
+        top="0"                      
+        left="0"                      
         right="0"
         height="100px"
         bgGradient="linear(to-b, transparent, gray.900)"
@@ -101,74 +101,74 @@ function Footer() {
             </Text>
             <Stack direction="row" spacing={4}>
               {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((icon, index) => (
-                <Link
+                <Link                              
                   key={index}
-                  href="#"
-                  bg="whiteAlpha.200"
-                  rounded="full"
-                  w="40px"
-                  h="40px"
-                  display="flex"
-                  alignItems="center"
+                  href="#"                              
+                  bg="whiteAlpha.200"                              
+                  rounded="full"                              
+                  w="40px"                
+                  h="40px"                
+                  display="flex"                
+                  alignItems="center"                
                   justifyContent="center"
                   _hover={{
                     bg: 'brand.500',
                     transform: 'translateY(-2px)',
                     shadow: 'lg'
-                  }}
+                  }}              
                   transition="all 0.3s"
                 >
                   <Icon as={icon} />
-                </Link>
-              ))}
+                </Link>                
+              ))}              
             </Stack>
-          </VStack>
+          </VStack>            
 
           {/* Quick Links */}
           <VStack align="flex-start" spacing={4}>
             <Heading size="md" mb={2} color="white">Quick Links</Heading>
             {['About Us', 'Rooms', 'Services', 'Contact'].map((item) => (
-              <Link
+              <Link                
                 key={item}
                 as={RouterLink}
                 to={`/${item.toLowerCase().replace(' ', '')}`}
-                color="gray.400"
+                color="gray.400"                
                 _hover={{ 
                   color: 'brand.500',
                   transform: 'translateX(4px)'
-                }}
-                fontSize="sm"
+                }}                  
+                fontSize="sm"                  
                 transition="all 0.3s"
-                display="flex"
-                alignItems="center"
+                display="flex"                      
+                alignItems="center"                      
               >
                 {item}
-              </Link>
-            ))}
-          </VStack>
+              </Link>                      
+            ))}                      
+          </VStack>                          
 
           {/* Contact Info */}
           <VStack align="flex-start" spacing={4}>
             <Heading size="md" mb={2} color="white">Contact Us</Heading>
             <Stack spacing={4} color="gray.400">
-              <HStack 
+              <HStack                   
                 spacing={4} 
                 _hover={{ color: 'brand.500' }}
                 transition="all 0.3s"
               >
                 <Icon as={FaPhone} />
                 <Text fontSize="sm">+91 9876543210</Text>
-              </HStack>
-              <HStack 
+              </HStack>                  
+              <HStack                   
                 spacing={4}
                 _hover={{ color: 'brand.500' }}
                 transition="all 0.3s"
               >
                 <Icon as={FaEnvelope} />
                 <Text fontSize="sm">contact@elitetower.com</Text>
-              </HStack>
-              <HStack 
-                align="flex-start" 
+              </HStack>                              
+              <HStack                           
+                align="flex-start"                           
                 spacing={4}
                 _hover={{ color: 'brand.500' }}
                 transition="all 0.3s"
@@ -178,9 +178,9 @@ function Footer() {
                   Hotel Elite Tower<br />
                   New Delhi, Delhi 110001
                 </Text>
-              </HStack>
+              </HStack>                    
             </Stack>
-          </VStack>
+          </VStack>                
 
           {/* Newsletter */}
           <VStack align="flex-start" spacing={4}>
@@ -190,45 +190,45 @@ function Footer() {
             </Text>
             <form onSubmit={handleSubscribe} style={{ width: '100%' }}>
               <Stack spacing={3} w="100%">
-                <Input
+                <Input                
                   placeholder="Your email"
-                  bg="whiteAlpha.100"
+                  bg="whiteAlpha.100"                
                   border={0}
                   _hover={{
                     bg: 'whiteAlpha.200'
-                  }}
-                  _focus={{
+                  }}                                        
+                  _focus={{                                        
                     bg: 'whiteAlpha.200',
                     borderColor: 'brand.500'
-                  }}
+                  }}                                        
                   required
                   type="email"
                 />
-                <Button 
+                <Button                                         
                   type="submit"
-                  bg="brand.500"
+                  bg="brand.500"                                        
                   _hover={{
                     bg: 'brand.600',
                     transform: 'translateY(-2px)',
                     shadow: 'lg'
-                  }}
+                  }}                                          
                   transition="all 0.3s"
                 >
                   Subscribe
-                </Button>
+                </Button>                                          
               </Stack>
-            </form>
-          </VStack>
-        </SimpleGrid>
+            </form>                        
+          </VStack>                        
+        </SimpleGrid>                        
 
         <Divider my={8} borderColor="whiteAlpha.300" />
 
         <Stack
           direction={{ base: 'column', md: 'row' }}
-          justify="space-between"
-          align="center"
-          fontSize="sm"
-          color="gray.400"
+          justify="space-between"                                                                                                                                                                  
+          align="center"                                                                                                                                                                  
+          fontSize="sm"                                                                                                                                                                  
+          color="gray.400"                                                                                                                                                                  
           spacing={{ base: 4, md: 0 }}
         >
           <Text>
@@ -237,22 +237,22 @@ function Footer() {
           <Stack 
             direction="row" 
             spacing={6}
-            divider={
+            divider={                                                                                                                                                                  
               <Text color="whiteAlpha.300" mx={2}>|</Text>
             }
           >
-            <Link 
-              href="#" 
+            <Link                                                                                                                                                                   
+           href="https://www.instagram.com/ayush_ix_xi/?hl=en"                                                                                                                                                         
               _hover={{ color: 'brand.500' }}
               transition="all 0.3s"
             >
               Dev.Ayush
-            </Link>
+            </Link>                                                                                                                                                                
         
           </Stack>
         </Stack>
       </Container>
-    </Box>
+    </Box>                                                                                                                                                                
   )
 }
 
